@@ -1,68 +1,121 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Car Dealership</title>
+
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #17365d;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+        }
+
+        header {
+            background-color: #17365d;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .member {
+            background: white;
+            width: 280px;
+            padding: 22px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px #cccccc;
+        }
+
+        .member img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .member h2 {
+            color: #17365d;
+        }
+
+        footer {
+            background: #17365d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/dealers/">Dealerships</a>
+        <a href="/static/About.html">About Us</a>
+        <a href="/static/Contact.html">Contact Us</a>
+    </nav>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    
-</div>
+    <header>
+        <h1>About Us</h1>
+        <p>Meet the team behind our car dealership platform.</p>
+    </header>
 
+    <main class="team">
+        <section class="member">
+            <img src="https://placehold.co/130x130?text=Team+Member+1"
+                 alt="Team member 1">
+            <h2>Team Member 1</h2>
+            <h3>Project Lead</h3>
+            <p>Coordinates the project and helps ensure the application meets its objectives.</p>
+            <p>Email: member1@example.com</p>
+        </section>
+
+        <section class="member">
+            <img src="https://placehold.co/130x130?text=Team+Member+2"
+                 alt="Team member 2">
+            <h2>Team Member 2</h2>
+            <h3>Frontend Developer</h3>
+            <p>Works on the user interface and improves the website experience.</p>
+            <p>Email: member2@example.com</p>
+        </section>
+
+        <section class="member">
+            <img src="https://placehold.co/130x130?text=Team+Member+3"
+                 alt="Team member 3">
+            <h2>Team Member 3</h2>
+            <h3>Backend Developer</h3>
+            <p>Works on server-side functionality and application data.</p>
+            <p>Email: member3@example.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Car Dealership Application</p>
+    </footer>
+</body>
 </html>
