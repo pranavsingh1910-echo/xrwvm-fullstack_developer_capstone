@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './Register.css';
 
@@ -58,7 +57,7 @@ function Register() {
         <input
           type="email"
           name="email"
-          placeholder="Email"
+          placeholder="email"
           value={formData.email}
           onChange={handleChange}
           required
