@@ -4,58 +4,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Us - Car Dealership</title>
+
     <link rel="stylesheet" href="/static/bootstrap.min.css">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
             margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
         }
+
         nav {
-            background: #12345a;
-            padding: 18px;
+            background-color: #17365d;
+            padding: 16px;
             text-align: center;
         }
+
         nav a {
             color: white;
-            margin: 0 18px;
             text-decoration: none;
+            margin: 0 15px;
             font-weight: bold;
         }
+
+        nav a:hover {
+            color: #ffc107;
+        }
+
+        nav a.active {
+            color: #ffc107;
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #244b75;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+        }
+
+        .contact-card {
+            background-color: white;
             padding: 30px;
             border-radius: 10px;
+            box-shadow: 0 3px 12px #ddd;
         }
-        h1 { color: #12345a; }
-        .contact-info { line-height: 2; }
+
+        .contact-card h2 {
+            color: #17365d;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-item strong {
+            color: #17365d;
+        }
+
+        .contact-image {
+            display: block;
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            background-color: #17365d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .container {
+                margin: 15px;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
+
 <body>
+
     <nav>
         <a href="/">Home</a>
-        <a href="/dealers/">Dealers</a>
+        <a href="/dealers/">Dealerships</a>
         <a href="/static/About.html">About Us</a>
-        <a href="/static/Contact.html">Contact Us</a>
+        <a href="/static/Contact.html" class="active">Contact Us</a>
     </nav>
 
-    <div class="container">
+    <header>
         <h1>Contact Us</h1>
-        <p>We are here to help you find your next car and answer your dealership questions.</p>
+        <p>We are here to help you find your perfect car.</p>
+    </header>
 
-        <div class="contact-info">
-            <p><strong>Car Dealership Support Team</strong></p>
-            <p>Email: support@cardealership.example</p>
-            <p>Phone: +1 800 555 0100</p>
-            <p>Address: 123 Main Street, Customer Service Center</p>
-            <p>Business Hours: Monday–Friday, 9:00 AM–5:00 PM</p>
-        </div>
+    <main class="container">
+        <section class="contact-card">
 
-        <h2>Get in Touch</h2>
-        <p>For assistance with dealers, reviews, or account access, contact our support team by email or phone.</p>
-    </div>
+            <img
+                class="contact-image"
+                src="/static/car_dealership.jpg"
+                alt="Car dealership showroom"
+                onerror="this.style.display='none';"
+            >
+
+            <h2>Get in Touch</h2>
+
+            <p>
+                Have questions about our dealerships, available cars,
+                or customer reviews? Contact our team for assistance.
+            </p>
+
+            <div class="contact-item">
+                <strong>Company:</strong>
+                Car Dealership Application
+            </div>
+
+            <div class="contact-item">
+                <strong>Email:</strong>
+                <a href="mailto:contact@example.com">
+                    contact@example.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>Phone:</strong>
+                <a href="tel:+910000000000">
+                    +91 00000 00000
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>Address:</strong>
+                Please add your actual dealership or college project address.
+            </div>
+
+            <div class="contact-item">
+                <strong>Working Hours:</strong>
+                Monday – Saturday, 9:00 AM – 6:00 PM
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Car Dealership Application | Contact Us</p>
+    </footer>
+
 </body>
 </html>
